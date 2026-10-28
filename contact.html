@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – CareBase</title>
+<meta name="description" content="Book a CareBase demo or ask us a question.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="CareBase home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0d7377"/><path d="M20 29s-8-4.8-8-10.6A4.4 4.4 0 0 1 20 16a4.4 4.4 0 0 1 8 2.4C28 24.2 20 29 20 29z" fill="#fff"/></svg>
+      CareBase
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#who-we-serve">Who we serve</a></li>
+      <li><a href="solution.html">Our solution</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <div class="dropdown">
+        <button id="login-btn" aria-haspopup="true">Log in ▾</button>
+        <div class="dropdown-menu" id="login-menu">
+          <a href="#">Patient portal</a>
+          <a href="#">Provider portal</a>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Book a demo</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Let's talk about your care program</h1>
+    <p class="lead" style="margin-top:1.2rem">Send us a note and we'll reply within one business day with a personalized proposal.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:720px">
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="row">
+        <label>First name<input name="first_name" required autocomplete="given-name"></label>
+        <label>Last name<input name="last_name" required autocomplete="family-name"></label>
+      </div>
+      <div class="row">
+        <label>Work email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      </div>
+      <label>Organization<input name="organization" autocomplete="organization"></label>
+      <label>Program of interest
+        <select name="program">
+          <option>Chronic Care Management (CCM)</option>
+          <option>Annual Wellness Visit (AWV)</option>
+          <option>Behavioral Health Integration (BHI)</option>
+          <option>Transitional Care Management (TCM)</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="5"></textarea></label>
+      <button class="btn btn-primary" type="submit" style="justify-self:start">Send message</button>
+      <p class="form-note">Please don't include patient health information in this form.</p>
+      <div class="form-msg" id="form-msg" role="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="index.html">CareBase</a>
+      <ul>
+        <li><a href="index.html#who-we-serve">Who we serve</a></li>
+        <li><a href="solution.html">Our solution</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="legal">© 2026 CareBase. Demonstration website; not a medical device and not a substitute for professional care.</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

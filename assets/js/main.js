@@ -51,7 +51,7 @@
       e.preventDefault();
       fetch(action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
         .then(function (r) {
-          msg.textContent = r.ok ? "Thanks! We'll be in touch within one business day." : "Something went wrong. Please email us instead.";
+          msg.textContent = r.ok ? "Thanks! We'll be in touch within one business day." : "Something went wrong. Please try again in a few minutes.";
           msg.classList.add("show");
           if (r.ok) form.reset();
         })
